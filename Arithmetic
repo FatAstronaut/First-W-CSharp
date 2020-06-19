@@ -1,0 +1,22 @@
+using System;
+class HelloWorld {
+  static void Main() {
+      
+      int ra = 20200266;
+      int ano = 070204;
+      int soma = ra+ano;
+      int sub = ra-ano;
+      int mult = ra*ano;
+      int div = ra / ano;
+      int rest = ra%ano;
+      
+    Console.WriteLine(" ra = " +ra);
+    Console.WriteLine(" ano = " +ano);
+    Console.WriteLine(" Soma = " +soma);
+    Console.WriteLine(" Subtração " +sub);
+    Console.WriteLine(" Multiplicacao = " +mult);
+    Console.WriteLine(" Divisão = " +div);
+    Console.WriteLine(" Resto = " +rest);
+    
+  }
+}
