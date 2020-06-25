@@ -1,0 +1,27 @@
+using System;
+class HelloWorld {
+  static void Main() {
+      
+    Console.Write ("Informe seu nome: ");
+    string nome = Console.ReadLine();
+    Console.Write ("Informe o número inteiro");
+    int num_int = Convert.ToInt32(Console.ReadLine());
+    Console.Write ("Informe o numero decimal");
+    double num_double = Convert.ToDouble(Console.ReadLine());
+    
+    double soma = num_int+num_double;
+    double sub = num_int-num_double;
+    double mult = num_int*num_double;
+    double div = num_int/num_double;
+    double rest = num_int%num_double;
+    
+    Console.WriteLine ("soma = " +soma);
+    Console.WriteLine ("subtração = " +sub);
+    Console.WriteLine ("multiplicacao = " +mult);
+    Console.WriteLine ("divisao = " +div);
+    Console.WriteLine ("resto = " +rest);
+    
+    Console.WriteLine ("Parabéns " + nome );
+    
+  }
+}
