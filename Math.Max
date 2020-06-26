@@ -1,0 +1,20 @@
+using System;
+class HelloWorld {
+  static void Main() {
+      
+    Console.Write ("Informe seu nome");
+    string first_name = Console.ReadLine();
+    Console.Write ("Informe o sobrenome");
+    string last_name = Console.ReadLine();
+    string name = string.Concat( first_name , last_name );
+    Console.Write ("Informe um ano");
+    int ano1 = Convert.ToInt32(Console.ReadLine());
+    Console.Write ("Informe o segundo ano");
+    int ano2 = Convert.ToInt32(Console.ReadLine());
+    
+    int num_maior = Math.Max(ano1,ano2);
+    Console.WriteLine("O seu nome é:"+name);
+    Console.WriteLine("O ano maior é:" + num_maior);
+    
+  }
+}
