@@ -1,0 +1,25 @@
+using System;
+class HelloWorld {
+  static void Main() {
+    Console.WriteLine("Fabrica de pecas de carro");
+    Console.WriteLine("Informe o numero do lote composto por 8 digitos");
+    string lote1 = Console.ReadLine();
+    Console.WriteLine("Informe o numero do lote composto por 8 digitos");
+    string lote2 = Console.ReadLine();
+    
+    string ano = lote1.Substring(0,4);
+    string ano2 = lote2.Substring(0,4);
+    Console.WriteLine("ano do lote 1: " +ano);
+    Console.WriteLine("ano do lote 2: " +ano2);
+   
+    
+    Console.WriteLine("Qual foi o ano 1?");
+    int anolote1 = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Qual foi o ano 2?");
+    int anolote2 = Convert.ToInt32(Console.ReadLine());
+    
+    int lote_maior = Math.Max(anolote1,anolote2);
+    Console.WriteLine("o lote maior é: " +lote_maior);
+    
+  }
+}
