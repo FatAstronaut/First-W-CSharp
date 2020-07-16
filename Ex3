@@ -1,0 +1,26 @@
+using System;
+class Revisao {
+  static void Main() {
+      
+    Console.WriteLine("Bem vindo ao sistema! ");
+    const double num_pi = 3.1416;
+    Console.WriteLine("Digite um numero ");
+    double n = Convert.ToInt32(Console.ReadLine());
+    double soma = n+num_pi;
+    double sub = n-num_pi;
+    double mult = n*num_pi;
+    double raizq= Math.Sqrt(n);
+    
+    Console.WriteLine ("soma = " +soma);
+    Console.WriteLine ("subtração = " +sub);
+    Console.WriteLine ("multiplicacao = " +mult);
+    Console.WriteLine ("raiz quadrada = " +raizq);
+    Console.WriteLine("Informe seu nome");
+    
+    string nome = Console.ReadLine();
+    Console.WriteLine("Informe o seu sobrenome");
+    string sobrenome = Console.ReadLine();
+    string nome_completo = string.Concat( nome, sobrenome );
+    Console.WriteLine("Obrigado pela participação " +nome_completo);
+  }
+}
