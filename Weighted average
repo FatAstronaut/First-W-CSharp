@@ -1,0 +1,29 @@
+/* Utilizando sua IDE faça um programa em C# que atenda as solicitações:
+- Criar um programa cujo nome da classe será ExercicioRev
+- Exibir mensagem de saudação “Bem vindo ao Sistema de Revisão de Conteúdo”
+- Informar seu nome e RA
+- Informar suas 3 notas de AV1, AV2 e AV3 (se não souber pode inventar)
+- Calcular a média aritmética das 3 notas
+- Exibir a mensagem “O aluno XXXXX ficou com a média 99999”, onde XXXX deveráser exibido o nome digitado em letras maiúsculas e 99999 o valor da média calculado
+- Exibir a mensagem “Aluno está de Recuperação?” e informar True ou False (Obs: aluno com média inferior a 6 está de recuperação) */
+
+using System;
+class ExercicioRev {
+  static void Main() {
+    Console.WriteLine("Bem vindo ao Sistema de Revisão de Conteúdo");
+    Console.WriteLine("Informe seu nome");
+    string nome = Console.ReadLine();
+    Console.WriteLine("Informe seu RA");
+    string ra = Console.ReadLine();
+    Console.WriteLine("Informe a nota da sua AV1");
+    double av1 = Convert.ToDouble(Console.ReadLine());
+    Console.WriteLine("Informe a nota da sua AV2");
+    double av2 = Convert.ToDouble(Console.ReadLine());
+    Console.WriteLine("Informe a nota da sua AV3");
+    double av3 = Convert.ToDouble(Console.ReadLine());
+    double media_arit = (av1 +av2+ av3) /3;
+    Console.WriteLine("O aluno " + nome +  " ficou com media : " +media_arit);
+    Console.Write(media_arit>=6.0);
+    
+  }
+}
