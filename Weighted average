@@ -22,7 +22,7 @@ class ExercicioRev {
     Console.WriteLine("Informe a nota da sua AV3");
     double av3 = Convert.ToDouble(Console.ReadLine());
     double media_arit = (av1 +av2+ av3) /3;
-    Console.WriteLine("O aluno " + nome +  " ficou com media : " +media_arit);
+    Console.WriteLine("O aluno " + nome.ToUpper() +  " ficou com media : " +media_arit);
     Console.Write(media_arit>=6.0);
     
   }
