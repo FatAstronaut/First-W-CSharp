@@ -1,0 +1,37 @@
+using System;
+using System.Linq;
+class Horarios {
+  static void Main() {
+    Console.WriteLine("Meus horários de aula");
+    Console.Write("Digite seu nome: ");
+    string nome = Console.ReadLine();
+    Console.Write("Digite seu RA: ");
+    int ra = Convert.ToInt32(Console.ReadLine());
+    string[] segunda = {"Algoritmos e Linguagem de Programação", "Algoritmos e Linguagem de Programação", "Arquitetura de Redes","Arquitetura de Redes"};
+    string[] terca = {"Desenvolvimento de Aplicativos", "Desenvolvimento de Aplicativos", "ComOralEscrita","Top.Comput"};
+    string[] quarta = {"IPF", "Metodologia", "Ingles","Desenvolvimento de Aplicativos"};
+    string[] quinta = {"Top.Comput", "Top.Comput","Algoritmos e Linguagem de Programação", "Algoritmos e Linguagem de Programação"};
+    string[] sexta = {"Desenvolvimento de Aplicativos","Arquitetura de Redes","Calculo Técnico","AON"};
+    string[] semana = {"segunda","terca","quarta","quinta","sexta"}; 
+    foreach(string aulas_segunda in segunda)
+    {
+     Console.WriteLine("Segunda: " +aulas_segunda);
+    }
+    foreach(string aulas_terca in terca)
+    {
+     Console.WriteLine("Terça: " +aulas_terca);
+    }
+    foreach(string aulas_quarta in quarta)
+    {
+     Console.WriteLine("Quarta: " +aulas_quarta);
+    }
+    foreach(string aulas_quinta in quinta)
+    {
+     Console.WriteLine("Quinta: " +aulas_quinta);
+    }
+    foreach(string aulas_sexta in sexta)
+    {
+     Console.WriteLine("Sexta: " +aulas_sexta);
+    }
+  }
+}
