@@ -1,0 +1,90 @@
+sing System;
+class Trabalho1 {
+  static void Main() {
+    Console.WriteLine("HORÓSCOPO");
+    Console.Write("Informe seu nome: ");
+    string nome = Console.ReadLine();
+    Console.Write("Informe sua data de nascimento no formato DDMMAAAA,com barras: ");
+    string dat_nasc = Console.ReadLine();
+    int mes = Convert.ToInt32(dat_nasc.Substring(3,2));
+    int dia = Convert.ToInt32(dat_nasc.Substring(0,2));
+    Console.WriteLine("Você nasceu no mês: " +mes);
+    Console.WriteLine("Você nasceu no dia: " +dia);
+    if (mes==03 && dia >=21 && dia >0 || dia<=19 && mes==04)
+    {
+    Console.WriteLine("Seu signo é Áries ");
+    Console.WriteLine("Áries é impaciente, não suporta limites e não costuma se dar bem com ordens e autoridades em geral");
+    }
+        
+    else if (mes==04 && dia >=20 && dia >0 || dia<=20 && mes==05)
+    {
+    Console.WriteLine("Seu signo é Touro ");
+    Console.WriteLine("O Touro, que pertence ao elemento Terra, é possessivo, teimoso mas realista. É construtivo, determinado, firme, mas por vezes inflexível.");
+    }
+        
+    else if (mes==05 && dia >=21 && dia >0 || dia<=21 && mes==06)
+    {
+    Console.WriteLine("Seu signo é Gêmeos ");
+    Console.WriteLine("Os geminianos são comunicativos, versáteis e sociáveis. Gostam de criar linhas de raciocínio e especulações na tentativa de entender diversos assuntos.");
+    }
+        
+    else if (mes==06 && dia >=22 && dia >0 || dia<=22 && mes==07)
+    {
+    Console.WriteLine("Seu signo é Câncer ");
+    Console.WriteLine("O signo de Câncer é fluído, adaptável e transparente. Apesar dessas características, pode ser também bastante resistente a mudanças e fechado.");
+    }
+        
+    else if (mes==07 && dia >=22 && dia >0 || dia<=22 && mes==08)
+    {
+    Console.WriteLine("Seu signo é Leão ");
+    Console.WriteLine("Leão é carismático, charmoso e possui uma personalidade forte e decisiva. Mas todos, sem exceção, não gostam de compartilhar com ninguém sua glória e aplausos. Sua maior característica é o amor");
+    }
+        
+    else if (mes==08 && dia >=23 && dia >0 || dia<=22 && mes==09)
+    {
+    Console.WriteLine("Seu signo é Virgem ");
+    Console.WriteLine("Alguns virginianos são desorganizados, confusos e desmazelados também. Na verdade, as maiores e melhores características desse signo são a discriminação e o discernimento. ");
+    }
+        
+    else if (mes==09 && dia >=23 && dia >0 || dia<=22 && mes==10)
+    {
+    Console.WriteLine("Seu signo é Libra ");
+    Console.WriteLine("Libra é um signo de ar, regido por Vênus, a deusa do amor, da beleza e dos relacionamentos. Toda pessoa de Libra pensa muito no amor, mas não um amor tórrido e cheio de paixão como pensa um taurino ou escorpiano.");
+    }
+        
+    else if (mes==10 && dia >=23 && dia >0 || dia<=21 && mes==11)
+    {
+    Console.WriteLine("Seu signo é Escorpião ");
+    Console.WriteLine("O Escorpião é dominador, por vezes cáustico, mas senhor de um poder psicológico notável. Apaixonado, mas também torturado pela sua capacidade de sentir todos os momentos da vida, é atraído pelo mistério, pelo inacessível, pelo oculto.");
+    }
+        
+    else if (mes==11 && dia >=22 && dia >0 || dia<=21 && mes==12)
+    {
+    Console.WriteLine("Seu signo é Sagitário ");
+    Console.WriteLine("o aventureiro Sagitário é conhecido pela alegria constante, por sua necessidade de liberdade e por ser uma pessoa visionária.");
+    }
+        
+    else if (mes==12 && dia >=22 && dia >0 || dia<=19 && mes==01)
+    {
+    Console.WriteLine("Seu signo é Capricórnio ");
+    Console.WriteLine("Todo Capricórnio é trabalhador, constante, persistente, obstinado, ambicioso, astuto e dono de uma considerável força de vontade. Em geral são pessoas muito reservadas e quase nunca permitem que alguém entre em seu mundo particular");
+    }
+        
+    else if (mes==01 && dia >=20 && dia >0 || dia<=18 && mes==02)
+    {
+    Console.WriteLine("Seu signo é Aquário ");
+    Console.WriteLine("Aquário tem forte tendência a reprimir suas emoções e não suporta melodramas e gestos melosos demais. Mostre-se sempre leal e sincero, mas nunca apaixonado. Não são muito dados à cortesia e ao romance também, portanto, puxe seu freio.");
+    }
+        
+    else if (mes==02 && dia >=19 && dia >0 || dia<=20 && mes==03)
+    {
+    Console.WriteLine("Seu signo é Peixes ");
+    Console.WriteLine("Apesar de nem sempre demonstrarem esse amor de forma convencional, com um abraço ou um “eu te amo”, as pessoas regidas pelo signo de Peixes são eternas apaixonadas e muito, mas muito sonhadoras.");
+    }
+    else
+    {
+    Console.WriteLine("Ops, data inválida");
+    }
+    
+  }
+}
