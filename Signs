@@ -1,4 +1,4 @@
-sing System;
+using System;
 class Trabalho1 {
   static void Main() {
     Console.WriteLine("HORÓSCOPO");
