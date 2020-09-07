@@ -1,0 +1,85 @@
+Trabalho Segundo Semestre - Gustavo Banaco Silva, 1B TI
+
+main.cs
+
+using System;
+class Cadastro
+{
+  static void Main() 
+  {
+    int i=0; 
+    int quant=0;
+    Console.WriteLine("Bem vindo ao sistema de Cadastro ");
+    while (i==0)
+    {
+        Console.WriteLine(" Código || Fabricante");
+        Console.WriteLine(" C  ||  Chevrolet");
+        Console.WriteLine(" F  ||  Fiat");
+        Console.WriteLine(" V  ||  Volkswagen");
+        Console.WriteLine("Digite o codigo do fabricante: ");
+        string x = (Console.ReadLine().ToUpper());
+        if (x=="XX")
+        {
+        Console.WriteLine("Fim de cadastro");
+        break;
+        }
+        else if(x=="V"||x=="C"||x=="F")
+        {
+        if (x=="V")
+        {
+        Carro volkswagen = new Carro();
+        Console.Write("Informe o modelo do carro: ");
+        volkswagen.modelo = Console.ReadLine();
+        Console.Write("Informe a cor do carro: ");
+        volkswagen.cor = Console.ReadLine();
+        Console.Write("Informe o ano de fabricação: ");
+        volkswagen.ano = Console.ReadLine();
+        volkswagen.Lista(volkswagen.modelo,volkswagen.cor,volkswagen.ano);
+        }
+        else if(x=="C")
+        {
+        Carro chevrolet = new Carro();
+        Console.Write("Informe o modelo do carro: ");
+        chevrolet.modelo = Console.ReadLine();
+        Console.Write("Informe a cor do carro: ");
+        chevrolet.cor = Console.ReadLine();
+        Console.Write("Informe o ano de fabricação: ");
+        chevrolet.ano = Console.ReadLine();
+        chevrolet.Lista(chevrolet.modelo,chevrolet.cor,chevrolet.ano);
+        }
+        else
+        {
+        Carro fiat = new Carro();
+        Console.Write("Informe o modelo do carro: ");
+        fiat.modelo = Console.ReadLine();
+        Console.Write("Informe a cor do carro: ");
+        fiat.cor = Console.ReadLine();
+        Console.Write("Informe o ano de fabricação: ");
+        fiat.ano = Console.ReadLine();
+        fiat.Lista(fiat.modelo,fiat.cor,fiat.ano);
+        }
+        quant++;
+        }
+        
+        else 
+        {
+        Console.WriteLine("Ops, Código Inválido!");
+        }
+    }
+  }
+}
+
+
+Carros.cs
+
+using System;
+class Carro 
+{
+  public string modelo;
+  public string cor;
+  public string ano;
+  public void Lista(string modelo, string cor, string ano)
+  {
+    Console.WriteLine("\n Carro cadastrado: {0} {1} {2}\n", modelo,cor,ano);
+  }
+}
